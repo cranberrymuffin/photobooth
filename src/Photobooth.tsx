@@ -103,6 +103,10 @@ const Photobooth = () => {
     capturePhoto(4, setImgSrc4);
   }, []);
 
+  function getBulbClass() {
+    return isTakingPhoto ? "bulb-on" : "bulb";
+  }
+
   if (
     imgSrc1 === undefined ||
     imgSrc2 === undefined ||
@@ -117,46 +121,46 @@ const Photobooth = () => {
             : "container photo-booth"
         }
       >
-        <div className="btn-container">
-          <button onClick={capture} hidden={isTakingPhotos}>
-            Capture photo
-          </button>
-        </div>
+        <div className="title-banner">Welcome to the photo booth!</div>
+        <div className="btn-container"></div>
         <div id="booth">
           <div className="bulb-container top-row">
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
           </div>
 
           <div className="bulb-container left-column">
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
           </div>
 
           <Webcam className="webcam" ref={webcamRef} />
 
           <div className="bulb-container right-column">
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
           </div>
 
           <div className="bulb-container bottom-row">
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
-            <div className="bulb"></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
+            <div className={getBulbClass()}></div>
           </div>
         </div>
+        <button onClick={capture} hidden={isTakingPhotos}>
+          Capture photo
+        </button>
       </div>
     );
   }

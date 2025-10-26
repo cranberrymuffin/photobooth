@@ -15,10 +15,11 @@
 
 .photo-booth {
   background-image:
-    linear-gradient(-40deg,#222,transparent,#111), 
-    linear-gradient(40deg,#222,transparent,#111), 
-    linear-gradient(-40deg,#222,transparent,#111),
-    linear-gradient(40deg,#222,transparent,#111);  display: flex;
+    linear-gradient(-40deg, #222, transparent, #111),
+    linear-gradient(40deg, #222, transparent, #111),
+    linear-gradient(-40deg, #222, transparent, #111),
+    linear-gradient(40deg, #222, transparent, #111);
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -114,6 +115,14 @@
     box-shadow: 0 0 15px red;
   }
 
+  .bulb-on {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightyellow;
+    box-shadow: 0 0 15px red;
+  }
+
   .top-row,
   .bottom-row {
     display: flex;
@@ -136,4 +145,9 @@
   .webcam {
     height: 50vmin;
   }
+}
+
+.title-banner {
+  font-size: calc(10px + 2vmin);
+  color: mediumpurple;
 }
