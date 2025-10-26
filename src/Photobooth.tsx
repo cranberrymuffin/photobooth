@@ -118,7 +118,7 @@ const Photobooth = () => {
             : "container photo-booth"
         }
       >
-        <Webcam height={600} width={600} ref={webcamRef} />
+        <Webcam className="webcam" ref={webcamRef} />
         <div className="btn-container">
           <button onClick={capture} hidden={isTakingPhotos}>
             Capture photo
