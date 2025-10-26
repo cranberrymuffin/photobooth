@@ -13,6 +13,14 @@
   }
 }
 
+.photo-booth {
+  background-color: aqua;
+}
+
+.taking-photo {
+  background-color: mediumpurple;
+}
+
 .Photobooth-header {
   background-color: #282c34;
   min-height: 100vh;
