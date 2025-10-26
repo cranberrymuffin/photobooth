@@ -159,7 +159,7 @@ const Photobooth = () => {
           </div>
         </div>
         <button onClick={capture} hidden={isTakingPhotos}>
-          Capture photo
+          Capture photos
         </button>
       </div>
     );
