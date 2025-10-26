@@ -92,7 +92,6 @@ const Photobooth = () => {
     );
   }
 
-  // create a capture function
   const startDelay = 3000;
   const photoTakingTime = 1000;
 
@@ -118,11 +117,45 @@ const Photobooth = () => {
             : "container photo-booth"
         }
       >
-        <Webcam className="webcam" ref={webcamRef} />
         <div className="btn-container">
           <button onClick={capture} hidden={isTakingPhotos}>
             Capture photo
           </button>
+        </div>
+        <div id="booth">
+          <div className="bulb-container top-row">
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+          </div>
+
+          <div className="bulb-container left-column">
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+          </div>
+
+          <Webcam className="webcam" ref={webcamRef} />
+
+          <div className="bulb-container right-column">
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+          </div>
+
+          <div className="bulb-container bottom-row">
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+            <div className="bulb"></div>
+          </div>
         </div>
       </div>
     );

@@ -14,14 +14,14 @@
 }
 
 .photo-booth {
-  background-color: aqua;
+  background-color: dimgray;
 }
 
 .taking-photo {
-  background-color: mediumpurple;
+  background-color: black;
 }
 
-.Photobooth-header {
+.photobooth-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -54,23 +54,80 @@
 }
 
 /* smaller screens */
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .webcam {
     width: 100%;
     height: 100%;
     align-items: center;
   }
 
-  
+  #booth {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .top-row {
+    grid-row: 1;
+    grid-column: 1 / 4;
+  }
+
+  .bottom-row {
+    grid-row: 3;
+    grid-column: 1 / 4;
+  }
+
+  .left-column {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .right-column {
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  #framed-image {
+    grid-row: 2;
+    grid-column: 2;
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .bulb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 0 0 15px red;
+  }
+
+  .top-row,
+  .bottom-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .left-column,
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* bulbs */
+    align-items: center;
+    padding: 5px;
+  }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width: 769px) {
   .webcam {
     height: 50vmin;
   }
-  
-}
-
-.webcam {
-  padding: 10px;
 }
