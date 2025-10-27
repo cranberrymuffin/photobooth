@@ -121,9 +121,19 @@ const Photobooth = () => {
             : "container photo-booth"
         }
       >
-        <div className={isTakingPhotos ? "instruction-banner" : "title-banner"}>
+        <div
+          className={
+            isTakingPhotos
+              ? isTakingPhoto
+                ? "picture-time"
+                : "instruction-banner"
+              : "title-banner"
+          }
+        >
           {isTakingPhotos
-            ? "wait 15 seconds to take 4 pics"
+            ? isTakingPhoto
+              ? "smile!"
+              : "wait for the camera"
             : "Welcome to the photo booth!"}
         </div>
 

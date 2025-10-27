@@ -148,14 +148,22 @@
 }
 
 .title-banner {
-  font-size: calc(10px + 2vmin);
+  font-size: x-large;
   color: lightpink;
   font-weight: bold;
+  padding: 5px;
 }
 
 .instruction-banner {
   font-weight: bold;
-  font-size: xx-large;
+  font-size: x-large;
   color: chartreuse;
+  padding: 5px;
+}
+
+.picture-time {
+  font-weight: bold;
+  font-size: x-large;
+  color: lightpink;
   padding: 5px;
 }
