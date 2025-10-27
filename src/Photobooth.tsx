@@ -138,7 +138,7 @@ const Photobooth = () => {
         </div>
 
         <div className="btn-container"></div>
-        <div id="booth">
+        <div className="light-box">
           <div className="bulb-container top-row">
             <div className={getBulbClass()}></div>
             <div className={getBulbClass()}></div>
