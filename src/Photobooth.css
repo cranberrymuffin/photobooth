@@ -149,5 +149,13 @@
 
 .title-banner {
   font-size: calc(10px + 2vmin);
-  color: mediumpurple;
+  color: lightpink;
+  font-weight: bold;
+}
+
+.instruction-banner {
+  font-weight: bold;
+  font-size: xx-large;
+  color: chartreuse;
+  padding: 5px
 }

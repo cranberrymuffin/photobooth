@@ -121,7 +121,8 @@ const Photobooth = () => {
             : "container photo-booth"
         }
       >
-        <div className="title-banner">Welcome to the photo booth!</div>
+        <div className={isTakingPhotos ? "instruction-banner": "title-banner"}>{isTakingPhotos ? "wait 15 seconds to take 4 pics": "Welcome to the photo booth!"}</div>
+
         <div className="btn-container"></div>
         <div id="booth">
           <div className="bulb-container top-row">
