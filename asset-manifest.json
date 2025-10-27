@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/photobooth/static/css/main.97adf776.css",
-    "main.js": "/photobooth/static/js/main.d578f143.js",
+    "main.css": "/photobooth/static/css/main.2774ea5e.css",
+    "main.js": "/photobooth/static/js/main.22a06d8f.js",
     "static/js/453.fd172b4c.chunk.js": "/photobooth/static/js/453.fd172b4c.chunk.js",
     "index.html": "/photobooth/index.html",
-    "main.97adf776.css.map": "/photobooth/static/css/main.97adf776.css.map",
-    "main.d578f143.js.map": "/photobooth/static/js/main.d578f143.js.map",
+    "main.2774ea5e.css.map": "/photobooth/static/css/main.2774ea5e.css.map",
+    "main.22a06d8f.js.map": "/photobooth/static/js/main.22a06d8f.js.map",
     "453.fd172b4c.chunk.js.map": "/photobooth/static/js/453.fd172b4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97adf776.css",
-    "static/js/main.d578f143.js"
+    "static/css/main.2774ea5e.css",
+    "static/js/main.22a06d8f.js"
   ]
 }
